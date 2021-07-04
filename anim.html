@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        svg{
+            background: #ffffff;
+        }
+        svg text {
+            font-size: 5rem;
+            stroke-width:3px;
+            fill: transparent;
+            stroke: #ff3b63;
+            letter-spacing: 2px;
+            animation: effect 6s infinite alternate;
+            font-family: monospace;
+        }
+        @keyframes effect {
+            0% {
+                stroke-dasharray: 0 70%;
+            } 
+            100% {
+                stroke-dasharray: 50% 0;
+                stroke-dashoffset:10%;
+            }
+        }
+    </style>
+    <svg width="90vw" height="90vh">
+        <text x="45%" y="55%">Hola val </text>
+    </svg>
+</body>
+</html>
